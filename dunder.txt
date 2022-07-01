@@ -1,0 +1,22 @@
+                                             Dunder Methods in Python
+                                            
+Dunder methods are names that are preceded and succeeded by double underscores, hence the name dunder. They are also called magic methods and can help override functionality for built-in functions for custom classes.
+Numeric types allow for a wide range of mathematical operations associated with dunder methods. For example, the addition operator + corresponds to the dunder method __add__().
+
+ Additional mathematical dunders include  __sub__ , __mul__ , __abs__, __lt__, __gt__, __le__, etc. 
+(which also have associated operator symbols, for example, -, *, / <, >).
+
+Typically, you just use standard operators instead of these functions. For example, if you want to add 10 to a number, you would use the standard operator num + 10 rather than num.__add__(10).
+
+ However, if you want to make these standard operators work with user-defined objects, you need to implement dunder methods in the data type.  
+Initialization and Construction 	Description
+
+__new__(cls, other)             	To get called in an object's instantiation.
+__init__(self, other)           	To get called by the __new__ method.
+
+
+Operator dunder Methods 	Description
+
+__add__(self, other)	To get called on add operation using + operator
+__sub__(self, other)	To get called on subtraction operation using - operator.
+__mul__(self, other)	To get called on multiplication operation using * operator.
