@@ -1,0 +1,19 @@
+                                                         Error Bars:
+                                                         
+Error Bar: Error bars are bars that we incorporate within our data conveying the unpredictabilty in reported measurements. In layman terms it displays graphical representations of the variableness of data and used on graphs to show the error measurement .
+
+Error bars are used to represent errors in the graphical plot.
+
+Matplotlib line plots and bar charts can include error bars.
+Error bars are useful to problem solvers because error bars show the confidence or precision in a set of measurements or calculated values. Bar charts without error bars give the illusion that a measured or calculated value is known to high precision or high confidence.
+
+Error bar charts are a great way to represent the variability in your data. It can be applied to graphs to provide an additional layer of detailed information on the presented data. 
+
+Syntax: 
+matplotlib.pyplot.errorbar(x, y, yerr=None, xerr=None, fmt=”, ecolor=None, elinewidth=None, capsize=None, barsabove=False, lolims=False, uplims=False, xlolims=False, xuplims=False, errorevery=1, capthick=None, \*, data=None, \*\*kwargs)
+
+Parameters: This method accept the following parameters that are described below:
+
+x, y: These parameters are the horizontal and vertical coordinates of the data points.
+fmt: This parameter is an optional parameter and it contains the string value.
+capsize: This parameter is also an optional parameter. And it is the length of the error bar caps in points with default value NONE.
